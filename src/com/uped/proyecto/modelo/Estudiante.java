@@ -10,7 +10,8 @@ public class Estudiante extends Persona {
         this.carrera = carrera;
     }
 
+    //Este es el métdo matricular de la clase Estudiante
     public void matricular(String materia){
-        System.out.println("")
+        System.out.println("");
     }
 }
