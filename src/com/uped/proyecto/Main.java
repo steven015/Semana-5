@@ -1,10 +1,7 @@
 package com.uped.proyecto;
 
 
-import com.uped.proyecto.modelo.Cliente;
-import com.uped.proyecto.modelo.Empleado;
-import com.uped.proyecto.modelo.Persona;
-import com.uped.proyecto.modelo.Visitante;
+import com.uped.proyecto.modelo.*;
 
 public class Main{
     public static void main(String[] args){
@@ -29,5 +26,12 @@ public class Main{
         for(Persona p : personas){
             System.out.println(p.presentarse());
         }
+
+        Estudiante e = new Estudiante(
+                "Carlos Ramírez", "07080969-4",
+                "UPED-2026-045", "Ing. en Sistemas"
+        );
+        System.out.println(e);
+        e.matricular("Programación III");
     }
 }
