@@ -1,6 +1,6 @@
 package com.uped.proyecto.modelo;
 
-public class Persona {
+public abstract class Persona{
     protected String nombre;
     protected String dui;
 
@@ -8,11 +8,10 @@ public class Persona {
         this.nombre = nombre;
         this.dui = dui;
     }
-    public Persona(String nombre){
-        this(nombre, "PENDIENTE");
-    }
 
     public String presentarse(){
-        return nombre + " (DUI: " + dui + ")";
+        return nombre + "DUI: " + dui + ")";
     }
+
+    public abstract double calcularBeneficioAnual();
 }

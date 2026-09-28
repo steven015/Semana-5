@@ -17,4 +17,9 @@ public class Empleado extends Persona {
     public double getSalario(){
         return salario;
     }
+
+    @Override
+    public double calcularBeneficioAnual(){
+        return salario * 0.10;
+    }
 }
